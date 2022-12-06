@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UseFoo {
 
-    @Autowired Foo<String,String> foo;
+    @Autowired Foo<String,String> foo; // error is reported
 
     public Foo<String, String> getFoo() {
         return foo;
